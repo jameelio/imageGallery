@@ -33,11 +33,11 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-// app.use(function(err, req, res, next) {
-//   if (err.status === 404) res.status(404).json({ message: "Route does not exist" });
-//   else res.status(500).json({ message: "OOPS!! Something went wrong"});
-// });
+app.use(function(err, req, res, next) {
+  if (err.status === 404) res.status(404).json({ message: "Route does not exist" });
+  else res.status(500).json({ message: "OOPS!! Something went wrong"});
+});
 
-app.listen(8000, function() {
-  console.log("Listening on port 8000");
+app.listen(process.env.EXPRESS_PORT || 8000 , function() {
+  console.log("Listening on port", process.env.EXPRESS_PORT || 8000);
 });
