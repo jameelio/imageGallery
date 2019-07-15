@@ -1,0 +1,29 @@
+{
+  "name": "imggallery",
+  "version": "1.0.0",
+  "description": "image gallery back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "images",
+    "uploads",
+    "gallery"
+  ],
+  "author": "jameel",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^3.0.2",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.3",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "v-uploader": "^1.8.0"
+  }
+}
